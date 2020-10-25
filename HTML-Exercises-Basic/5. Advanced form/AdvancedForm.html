@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="content destination" method="post">
+        <fieldset>
+            <legend>User Information</legend>
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Username"><br>
+            <label for="password">Password</label>
+            <input type="text" id="password" placeholder="Password"><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="firstName">First name:</label><br>
+            <input type="text" id="firstName"><br>
+            <label for="lastName">Last name:</label><br>
+            <input type="text" id="lastName"><br>
+            <input type="radio" id="male" name="gender" value="male" checked>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <label for="favoriteFood">Favorite Food</label>
+            <select id="favoriteFood">
+                <option value="1">Chocolate</option>
+            </select>
+        </fieldset><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
