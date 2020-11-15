@@ -2,7 +2,8 @@ var arr1 = [];
 var arr2 = [];
 
 for (i in datesArray) {
-    arr1[i] = (datesArray[i].getDate() < 10 ? "0" + datesArray[i].getDate() : datesArray[i].getDate()) + "." + ((datesArray[i].getMonth() < 9 ? "0" + datesArray[i].getMonth(): datesArray[i].getMonth()) + 1) + "." + datesArray[i].getFullYear()
+    arr1[i] = (datesArray[i].getDate() < 10 ? "0" + datesArray[i].getDate() : datesArray[i].getDate()) + "." + 
+    ((datesArray[i].getMonth() < 9 ? "0" + datesArray[i].getMonth(): datesArray[i].getMonth()) + 1) + "." + datesArray[i].getFullYear()
     arr2[i] = datesArray[i].getDay();
 }
 
