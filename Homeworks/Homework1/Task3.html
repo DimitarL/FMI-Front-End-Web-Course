@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Екран 3</title>
+
+   <link rel='stylesheet' href='Task3.css'>
+   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+   <div id="root">
+      <main>
+         <header class="mainHeader">
+            <h1 id="headerLogo">Flutter</h1>
+            <div class id="search">
+               <input type="text" id="searchField" placeholder="Search">
+               <i class="fa">&#xf002;</i>
+            </div>
+         </header>
+
+         <div class="content">
+            <aside class="profileInformation">
+               <header class="userProfile">
+                  <img src="img/userDefault.png" alt="profile picture" id="userPicture">
+                  <label for="userPicture" id="username">Martin Hristov</label>
+               </header>
+
+               <section id="statistics">
+                  <ul>
+                     <li>
+                        <p class="stat" id="posts">Posts</p>
+                        <label for="posts" class="count">1</label>
+                     </li>
+                     <li>
+                        <p class="stat" id="reaction">Reactions</p>
+                        <label for="reaction" class="count">7</label>
+                     </li>
+                  </ul>
+
+                  <button id="logoutButton">Log Out</button>
+               </section>
+            </aside>
+
+            <div class="mainContent">
+               <article class="post">
+                  <header class="addPost">
+                     <img src="img/userDefault.png" alt="user picture" id="userPicture">
+
+                     <div class id="addPostTextWrapper">
+                        <!-- <input type="text" id="searchField" placeholder="Search"> -->
+                        <input type="text" id="addPostText" placeholder="Say something">
+                        <i class='far messagesStyle'>&#xf27a;</i>
+                     </div>
+                  </header>
+
+                  <ul>
+                     <li class="posted noBullets">
+                        <header class="postHeader">
+                           <div class="postInfo">
+                              <img src="img/userDefault.png" alt="post author picture" id="next-to-post">
+                              <label for="next-to-post" id="username">Ivan Ivanov</label>
+                              <ul class="bullets">
+                                 <li id="time">0 seconds ago</li>
+                              </ul>
+                           </div>
+                           <i alt="close" id="x-btn" class="fa">&#xf00d;</i>
+                        </header>
+
+                        <section class="postContent">
+                           <p class="postedPost">Ex eu non voluptate esse aliqua velit. Nulla duis ipsum incididunt
+                              culpa
+                              laborum commodo consequat in. Nostrud elit dolor laboris tempor officia duis exercitation
+                              anim
+                              voluptate ut enim officia proident. Labore elit esse velit quis et voluptate officia
+                              laboris
+                              cillum dolor pariatur excepteur esse laborum. Veniam adipisicing quis nisi cillum
+                              voluptate
+                              veniam nulla sunt.</p>
+                           <section id="under-post">
+                              <i style="font-size:24px" alt="like" id="like" class="fa thumbsUp">&#xf087;</i>
+                              <label for="like" class="count-ratio">5</label>
+                              <i style="font-size:24px" alt="dislike" id="dislike" class="fa thumbsDown">&#xf088;</i>
+                              <label for="dislike" class="count-ratio">3</label>
+                           </section>
+                        </section>
+                     </li>
+
+                     <li class="posted noBullets">
+                        <header class="postHeader">
+                           <div class="postInfo">
+                              <img src="img/userDefault.png" alt="post author picture" id="next-to-post">
+                              <label for="next-to-post" id="username">Martin</label>
+                              <ul class="bullets">
+                                 <li id="time">Last month</li>
+                              </ul>
+                           </div>
+                           <i alt="close" id="x-btn" class="fa">&#xf00d;</i>
+                        </header>
+
+                        <section class="postContent">
+                           <p class="postedPost">Mollit consequat ipsum sit laboris incididunt sunt deserunt velit elit
+                              eu
+                              proident</p>
+
+                           <section id="under-post">
+                              <i style="font-size:24px" alt="like" id="like" class="fa thumbsUp">&#xf087;</i>
+                              <label for="like" class="count-ratio">3</label>
+                              <i style="font-size:24px" alt="dislike" id="dislike" class="fa thumbsDown">&#xf088;</i>
+                              <label for="dislike" class="count-ratio">0</label>
+                           </section>
+                        </section>
+                     </li>
+                  </ul>
+               </article>
+            </div>
+
+         </div>
+      </main>
+   </div>
+</body>
+
+</html>
