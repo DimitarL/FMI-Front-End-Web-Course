@@ -1,0 +1,264 @@
+body {
+   background: linear-gradient(-100deg, #A2F2F1 0%, #B19AFE 100%);
+   font-family: Helvetica, sans-serif;
+   font-size: 16px;
+   margin: 0;
+}
+
+.mainHeader {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   box-sizing: border-box;
+   width: 100%;
+   background-color: white;
+   padding-left: 3rem;
+   padding-right: 3rem;
+   height: 2.5rem;
+}
+
+#headerLogo {
+   font-weight: 400;
+}
+
+#search {
+   background-color: rgb(246, 247, 253);
+   border: 2px solid rgb(236, 238, 253);
+   border-radius: 20px;
+   font-size: 0.75rem;
+   padding-left: 0.7rem;
+   padding-right: 0.7rem;
+   padding-top: 0.3rem;
+   padding-bottom: 0.3rem;
+}
+
+#searchField {
+   border: none;
+   background-color: rgb(246, 247, 253);
+}
+
+.content {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-top: 8px;
+}
+
+.post {
+   background-color: white;
+   width: 43.75rem;
+   height: 23.75rem;
+   margin-left: 0.5rem;
+}
+
+.profileInformation {
+   display: inline-block;
+   overflow: hidden;
+   width: 18.75rem;
+   height: 13.75rem;
+   background-color: white;
+}
+
+.userProfile #userPicture {
+   width: 5.625rem;
+   height: 5.625rem;
+   margin-top: 8px;
+}
+
+.userProfile {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 9.375rem;
+   background-color: white;
+}
+
+.userProfile #username {
+   margin-top: 8px;
+   font-size: 22px;
+   font-weight: 500;
+}
+
+.postInfo #username {
+   font-weight: 700;
+}
+
+#statistics {
+   display: flex;
+   background-color: rgb(246, 247, 253);
+}
+
+#statistics {
+   height: 12.5rem;
+}
+
+#logoutButton {
+   width: 5.625rem;
+   height: 2.5rem;
+   border: 1px solid rgb(24, 183, 211);
+   border-radius: 20px;
+   color: rgb(24, 183, 211);
+   font-size: 18px;
+   font-weight: 700;
+   margin-top: 1rem;
+}
+
+ul {
+   margin: 0;
+   margin-left: 1rem;
+   padding: 0;
+}
+
+#statistics ul li, .noBullets {
+   display: inline-block;
+   padding-right: 1.5rem;
+}
+
+.noBullets {
+   list-style-type: none;
+}
+
+.bullets {
+   list-style-type: disc;
+   list-style-position: inside;
+   color: gray;
+}
+
+.stat {
+   color: gray;
+   font-weight: 700;
+   margin-bottom: 0;
+}
+
+.count {
+   color: rgb(24, 183, 211);
+   font-size: 24px;
+   font-weight: 700;
+}
+
+.thumbsDown {
+   padding-left: 3.125rem;
+}
+
+.thumbsUp {
+   padding-left: 5.08rem;
+}
+
+.addPost {
+   display: flex;
+   align-items: center;
+   height: 4.375rem;
+   background-color: rgb(246, 247, 253);
+   padding-left: 40px;
+}
+
+.addPost #userPicture {
+   width: 2.5rem;
+   height: 2.5rem;
+}
+
+#addPostTextWrapper {
+   display: flex;
+   align-items: center;
+   width: 34.375rem;
+   height: 2.5rem;
+   border: 1px solid grey;
+   border-radius: 20px;
+   margin-left: 20px;
+}
+
+#addPostText {
+   width: 30.625rem;
+   background-color: rgb(246, 247, 253);
+   font-size: 18px;
+   font-weight: 400;
+   border: none;
+   margin-left: 20px;
+}
+
+#addPostText::placeholder {
+   color: rgb(24, 183, 211);
+}
+
+#next-to-post {
+   width: 3.125rem;
+   height: 3.125rem;
+   margin-left: 0.6875rem;
+}
+
+.userProfile #username {
+   font-size: 22px;
+   font-weight: 500;
+   margin-top: 8px;
+}
+
+.postHeader {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 41.875rem;
+   height: 5rem;
+}
+
+.messagesStyle {
+   color: rgb(24, 183, 211);
+}
+
+.postInfo {
+   display: flex;
+   align-items: center;
+}
+
+.postHeader #username {
+   margin-left: 1.25rem;
+}
+
+.postedPost {
+   padding-left: 5.08rem;
+   margin-top: -1.8rem;
+}
+
+@media (max-width: 890px) {
+   .profileInformation {
+      width: 25rem;
+   }
+   .post {
+      width: 25rem;
+      height: 32rem;
+      margin: 0;
+   }
+   #next-to-post {
+      margin-left: 0rem;
+   }
+   .postHeader #username {
+      margin-left: 0.5rem;
+   }
+   .postInfo #time {
+      margin-left: -0.5rem;
+   }
+   #statistics ul li:first-child {
+      padding-right: 0rem;
+   }
+   #statistics ul li:last-child {
+      padding-right: 10rem;
+   }
+   .postHeader {
+      width: 23rem;
+   }
+   .addPost {
+      padding-left: 1rem;
+   }
+   .thumbsUp {
+      padding-left: 4rem;
+   }
+   #addPostTextWrapper {
+      width: 18rem;
+   }
+   #addPostText {
+      width: 14rem;
+   }
+   .postedPost {
+      width: 19rem;
+      padding-left: 3.625rem;
+   }
+}
